@@ -71,7 +71,7 @@ a:hover { text-decoration: underline; }
 }
 .shots figure { margin: 0; text-align: center; }
 .shots img {
-  width: 200px; max-width: 60vw; border-radius: 26px;
+  width: 200px; height: auto; max-width: 60vw; border-radius: 26px;
   border: 1px solid var(--border); box-shadow: 0 24px 60px rgba(0,0,0,0.5);
   display: block;
 }
