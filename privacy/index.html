@@ -17,7 +17,7 @@
 
   <article class="article wrap">
     <h1>Privacy Policy</h1>
-    <p class="updated">Tesseract Launcher · Last updated June 13, 2026</p>
+    <p class="updated">Tesseract Launcher · Last updated June 16, 2026</p>
 
     <p>
       Tesseract Launcher (“the app”) is an Android home-screen launcher developed
@@ -41,10 +41,11 @@
 
     <h2>Installed apps</h2>
     <p>
-      To show and launch your apps, the launcher reads the list of apps installed
-      on your device (the <code>QUERY_ALL_PACKAGES</code> permission). This is used
-      only on your device to build your home screen and app drawer. The list is
-      never collected, stored off-device, or shared.
+      To show and launch your apps, the launcher queries the system for apps that
+      have a launcher icon (using Android’s scoped package-visibility
+      <code>&lt;queries&gt;</code> declaration and the <code>LauncherApps</code>
+      service). This is used only on your device to build your home screen and app
+      drawer. The list is never collected, stored off-device, or shared.
     </p>
 
     <h2>Notifications (optional)</h2>
@@ -86,7 +87,7 @@
     <h2>Permissions we use</h2>
     <ul>
       <li><strong>Internet</strong> — to run searches and fetch Kagi Privacy Pass tokens.</li>
-      <li><strong>Query all packages</strong> — to list and launch your installed apps.</li>
+      <li><strong>Package visibility</strong> — to list and launch apps that appear in your app drawer.</li>
       <li><strong>Access hidden profiles</strong> — to reveal/hide the private space (granted to the default launcher).</li>
       <li><strong>Notification access</strong> (optional) — to show notification dots.</li>
     </ul>
